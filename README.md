@@ -12,11 +12,10 @@ Production-oriented MVP for **fast bulk Pokémon card inventory entry** on iPhon
    ```bash
    npm run start
    ```
-3. Run recognition/matching tests:
+3. Run recognition tests:
    ```bash
    npm run test
    ```
-   - Optional forwarded flags are accepted (for compatibility with commands like `npm test -- --runInBand --verbose`).
 
 ## UX Polish Highlights (iPhone-first)
 
