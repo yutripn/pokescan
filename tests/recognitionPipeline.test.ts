@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { buildOcrStructuredResult } from '../src/services/scanner/ocrPipeline.ts';
-import { OCR_FIXTURES } from './fixtures/ocrFixtures.ts';
+import { buildOcrStructuredResult } from '../src/services/scanner/ocrPipeline';
+import { OCR_FIXTURES } from './fixtures/ocrFixtures';
 
 test('extracts collector number variants including TG style', () => {
   const result = buildOcrStructuredResult(OCR_FIXTURES.tgStyle);

@@ -4,6 +4,9 @@
     "slug": "pokescan",
     "scheme": "pokescan",
     "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
     "ios": { "supportsTablet": false }
   }
 }

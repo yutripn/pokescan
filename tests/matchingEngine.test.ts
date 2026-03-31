@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { matchingEngine } from '../src/services/matching/matchingEngine.ts';
-import { buildOcrStructuredResult } from '../src/services/scanner/ocrPipeline.ts';
-import { OCR_FIXTURES } from './fixtures/ocrFixtures.ts';
+import { matchingEngine } from '../src/services/matching/matchingEngine';
+import { buildOcrStructuredResult } from '../src/services/scanner/ocrPipeline';
+import { OCR_FIXTURES } from './fixtures/ocrFixtures';
 
 const cards = [
   { id: 'c1', setId: 's1', apiCategory: 3 as const, name: 'Pikachu V', normalizedName: 'pikachu v', collectorNumber: '25', rarity: 'Rare', rawPayload: '{}' },
