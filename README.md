@@ -12,11 +12,10 @@ Production-oriented MVP for **fast bulk Pokémon card inventory entry** on iPhon
    ```bash
    npm run start
    ```
-3. Run recognition/matching tests (TypeScript via `tsx` + Node test runner):
+3. Run recognition tests:
    ```bash
    npm run test
    ```
-   - Optional forwarded flags are accepted (for compatibility with commands like `npm test -- --runInBand --verbose`).
 
 ## UX Polish Highlights (iPhone-first)
 
@@ -49,18 +48,6 @@ Production-oriented MVP for **fast bulk Pokémon card inventory entry** on iPhon
 - OCR normalization for common confusions (`O/0`, `I/l/1`, `S/5`, `B/8`, `G/6`).
 - Weighted deterministic matcher with confidence buckets and explainable score components.
 - Selected-set-first candidate pooling with local indexing for speed.
-
-
-## Troubleshooting
-
-- If `expo start` crashes with `Cannot find module expo-router/internal/routing`, make sure typed routes are disabled in `app.json` (this repo defaults to disabled) and reinstall dependencies.
-- Use Node **20 LTS** (recommended for Expo SDK 52). Node 24 can be unstable with some Expo tooling.
-- Reset local installs when switching branches:
-  ```bash
-  rm -rf node_modules package-lock.json
-  npm install
-  npm run start
-  ```
 
 ## MVP Limitations
 
