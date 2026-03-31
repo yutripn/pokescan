@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "PokeScan",
+    "slug": "pokescan",
+    "scheme": "pokescan",
+    "plugins": ["expo-router"],
+    "ios": { "supportsTablet": false }
+  }
+}
